@@ -1,5 +1,8 @@
 import Head from 'next/head'
-import Header from '@/Components/header'
+import Homepage from '@/Components/Homepage'
+import About from '@/Components/About'
+import Project from '@/Components/Projects'
+import Services from '@/Components/Services'
 
 export default function Home() {
   return (
@@ -12,8 +15,10 @@ export default function Home() {
       </Head>
       <main>
         
-        <Header/>
-
+        <Homepage/>
+        <About/>
+        <Services/>
+        <Project/>
         
       </main>
     </>

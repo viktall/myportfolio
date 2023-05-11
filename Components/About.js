@@ -1,29 +1,78 @@
 import Image from 'next/image'
 import {Box} from "@mui/material"
+import SchoolIcon from '@mui/icons-material/School';
+import WorkIcon from '@mui/icons-material/Work';
 
 
 const About=()=>{
 
 return(
 
-    <Box sx={{display:'flex', height:'100vh'}}>
-            <Box sx={{width:'50%', height:'100%', display:'flex', justifyContent:'center', alignItems:'center'}}>
-
+    <Box sx={{display:{md:'flex', xs:'block'}, py:2, zIndex:-1}}>
+        
+            <Box flex={1} sx={{display:'flex', alignItems:'center', justifyContent:'center', px:1}}>
+            <Box sx={{width:540, height:560, position:'relative'}}>
             <Image 
                 src="/whiteback5.png" 
-                alt="victor ugwu" width={400} height={400} priority 
+                alt="victor ugwu" fill sizes='100%' priority 
+                style={{objectFit:"cover"}}
                 />
             </Box>
 
-            <Box sx={{width:'50%'}}>
-                <Box sx={{textAlign:'center', py:2}}><h1>ABOUT</h1></Box>
-                <Box sx={{px:10}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </Box>
+            <Box flex={1}>
+                <Box sx={{textAlign:'center', py:4.7}}><h1>ABOUT ME</h1></Box>
+                <Box sx={{px:3}}>
+                    <Box>
+                    <Box sx={{bgcolor:'#ccc', fontWeight:'bold', py:1, pl:3}}>WORK EXPERIENCE</Box>
+                       <Box sx={{display:'flex', alignItems:'center', pl:6}}>
+                        <Box>
+                                <WorkIcon/>
+                        </Box>
+                       <Box>
+                            <Box sx={{pl:2, pt:3, fontWeight:'bold'}}>Frontend Developer</Box>
+                            <Box sx={{pl:2, pb:3}}> Encentric solutions | 3years</Box>
+                       </Box>
+                       </Box>
+                    </Box>
+
+                    <Box>
+                    <Box sx={{bgcolor:'#ccc', fontWeight:'bold', py:1, pl:3}}>EDUCATIONAL BACKGROUND</Box>
+                    <Box sx={{display:'flex', alignItems:'center', pl:6}}>
+                        <Box>
+                            <SchoolIcon/>
+                        </Box>
+                        <Box>
+                            <Box sx={{pl:2, pt:3, fontWeight:'bold'}}> BSc. Chemical Engineering</Box>
+                            <Box sx={{pl:2, pb:3}}>Instiitution: Obafemi Awolowo University, Nigeria.</Box>
+                        </Box>
+                    </Box>
+                    </Box>
+
+                    <Box>
+                    <Box sx={{bgcolor:'#ccc', fontWeight:'bold', py:1, pl:3}}> RELEVANT SKILLS</Box>
+                    <Box sx={{pl:7, py:3}}> 
+                        <Box sx={{display:'flex', alignItems:'center', py:0.5, gap:3}}>
+                            <Box sx={{bgcolor:'#000', width:7, height:7, borderRadius:'50%'}}/><Box>HTML and CSS</Box>
+                        </Box>
+                        <Box sx={{display:'flex', alignItems:'center', py:0.5, gap:3}}>
+                            <Box sx={{bgcolor:'#000', width:7, height:7, borderRadius:'50%'}}/><Box>JavaScript and typeScript</Box>
+                        </Box>
+                        <Box sx={{display:'flex', alignItems:'center', py:0.5, gap:3}}>
+                            <Box sx={{bgcolor:'#000', width:7, height:7, borderRadius:'50%'}}/><Box>material UI</Box>
+                        </Box>
+                        <Box sx={{display:'flex', alignItems:'center', py:0.5, gap:3}}>
+                            <Box sx={{bgcolor:'#000', width:7, height:7, borderRadius:'50%'}}/><Box>ReactJs and NextJs</Box>
+                        </Box>
+                        <Box sx={{display:'flex', alignItems:'center', py:0.5, gap:3}}>
+                            <Box sx={{bgcolor:'#000', width:7, height:7, borderRadius:'50%'}}/><Box>Git/Github</Box>
+                        </Box>
+                        <Box sx={{display:'flex', alignItems:'center', py:0.5, gap:3}}>
+                            <Box sx={{bgcolor:'#000', width:7, height:7, borderRadius:'50%'}}/><Box>Adobe Xd</Box>
+                        </Box>
+                    </Box>
+                    </Box>
+
                 </Box>
             </Box>
 
