@@ -1,100 +1,144 @@
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import TrendingUpIcon from '@mui/icons-material/TrendingUp';
-import ScheduleIcon from '@mui/icons-material/Schedule';
-import SearchIcon from '@mui/icons-material/Search';
-import DevicesOutlinedIcon from '@mui/icons-material/DevicesOutlined';
+import Box from "@mui/material/Box";
+import Paper from "@mui/material/Paper";
+import Image from "next/image";
+import {
+  Devices,
+  Groups,
+  Laptop,
+  SupportAgent,
+  TrendingUp,
+  Tungsten,
+} from "@mui/icons-material";
 
-const Services=()=> {
-  return(
-    <Box sx={{'& .MuiSvgIcon-root':{fontSize:40}}}>
-        <Box sx={{p:8, fontSize:42}}>
-          MY SERVICES
-        </Box>
-        <Box sx={{display: 'flex', justifyContent:'center', flexWrap: 'wrap', '& > :not(style)': {m: 1, width: 328, height: 428}}}>
-          <Paper elevation={3} sx={{px:5, py:4}}>
+const Services = () => {
+  return (
+    <Box
+      sx={{ "& .MuiSvgIcon-root": { fontSize: 40 }, bgcolor: "#282828", pb: 5 }}
+    >
+      <Box sx={{ width: "100vw", height: 20, position: "relative" }}>
+        <Image
+          src="/topDiv.svg"
+          alt="victor ugwu"
+          fill
+          sizes="100%"
+          priority
+          style={{ objectFit: "cover", display: "block" }}
+        />
+      </Box>
+      <Box id='Services' sx={{ p: 8, fontSize: 42, color: "#fff" }}>MY SERVICES</Box>
+      <Box sx={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}>
+        <Paper className="hov" elevation={0} square>
           <Box>
-              <Box sx={{ display:'flex', justifyContent:'center', alignItems:'center', width:100, height:100, border:1, borderColor:'#aaa', borderRadius:'100%'}}><LaptopMacIcon/></Box>
-              <Box sx={{fontWeight:'bold', fontSize:22, my:2}}>
-                WEB DESIGN
+            <Box className="box">
+              <Box className="outerbox">
+                <Box className="innerbox1" />
+                <Box className="innerbox2" />
               </Box>
-              <Box> 
-                  I specialize in DOM manipution. Currently, 
-                  i'm focused in buildng interactive and responsive webpage I specialize in DOM manipution. Currently, 
-                  i'm focused in buildng interactive and responsive webpage I specialize.
-              </Box>
+              <Laptop sx={{ position: "absolute" }} />
             </Box>
-          </Paper>
-          <Paper elevation={3} sx={{px:5, py:4}}>
+            <Box className="title">Web Design & Development</Box>
+            <Box className="content">
+              I specialize in DOM manipution. Currently, i'm focused in buildng
+              interactive and responsive webpage I specialize in DOM manipution.
+              Currently, i'm focused in buildng interactive and responsive
+              webpage I specialize.
+            </Box>
+          </Box>
+        </Paper>
+        <Paper className="hov" elevation={0} square>
           <Box>
-            <Box sx={{ display:'flex', justifyContent:'center', alignItems:'center', width:100, height:100, border:1, borderColor:'#aaa', borderRadius:'100%'}}><TrendingUpIcon/></Box>
-              <Box sx={{fontWeight:'bold', fontSize:22, my:2}}>
-                WEB DESIGN
+            <Box className="box">
+              <Box className="outerbox">
+                <Box className="innerbox1" />
+                <Box className="innerbox2" />
               </Box>
-              <Box> 
-                  I specialize in DOM manipution. Currently, 
-                  i'm focused in buildng interactive and responsive webpage I specialize in DOM manipution. Currently, 
-                  i'm focused in buildng interactive and responsive webpage I specialize.
-              </Box>
+              <Devices sx={{ position: "absolute" }} />
             </Box>
-          </Paper>
-          <Paper elevation={3} sx={{px:5, py:4}}>
-            <Box>
-            <Box sx={{ display:'flex', justifyContent:'center', alignItems:'center', width:100, height:100, border:1, borderColor:'#aaa', borderRadius:'100%'}}><ScheduleIcon/></Box>
-              <Box sx={{fontWeight:'bold', fontSize:22, my:2}}>
-                WEB DESIGN
-              </Box>
-              <Box> 
-                  I specialize in DOM manipution. Currently, 
-                  i'm focused in buildng interactive and responsive webpage I specialize in DOM manipution. Currently, 
-                  i'm focused in buildng interactive and responsive webpage I specialize.
-              </Box>
+            <Box className="title">Responsive Design</Box>
+            <Box className="content">
+              I specialize in DOM manipution. Currently, i'm focused in buildng
+              interactive and responsive webpage I specialize in DOM manipution.
+              Currently, i'm focused in buildng interactive and responsive
+              webpage I specialize.
             </Box>
-          </Paper>
-          <Paper elevation={3} sx={{px:5, py:4}}>
-            <Box>
-            <Box sx={{ display:'flex', justifyContent:'center', alignItems:'center', width:100, height:100, border:1, borderColor:'#aaa', borderRadius:'100%'}}><SearchIcon/></Box>
-              <Box sx={{fontWeight:'bold', fontSize:22, my:2}}>
-                WEB DESIGN
+          </Box>
+        </Paper>
+        <Paper className="hov" elevation={0} square>
+          <Box>
+            <Box className="box">
+              <Box className="outerbox">
+                <Box className="innerbox1" />
+                <Box className="innerbox2" />
               </Box>
-              <Box> 
-                  I specialize in DOM manipution. Currently, 
-                  i'm focused in buildng interactive and responsive webpage I specialize in DOM manipution. Currently, 
-                  i'm focused in buildng interactive and responsive webpage I specialize.
-              </Box>
+              <TrendingUp sx={{ position: "absolute" }} />
             </Box>
-          </Paper>
-          
-          <Paper elevation={3} sx={{px:5, py:4}}>
-            <Box>
-              <Box sx={{ display:'flex', justifyContent:'center', alignItems:'center', width:100, height:100, border:1, borderColor:'#aaa', borderRadius:'100%'}}><DevicesOutlinedIcon/></Box>
-              <Box sx={{fontWeight:'bold', fontSize:22, my:2}}>
-                WEB DESIGN
-              </Box>
-              <Box> 
-                  I specialize in DOM manipution. Currently, 
-                  i'm focused in buildng interactive and responsive webpage I specialize in DOM manipution. Currently, 
-                  i'm focused in buildng interactive and responsive webpage I specialize.
-              </Box>
+            <Box className="title">Performance & SEO</Box>
+            <Box className="content">
+              I specialize in DOM manipution. Currently, i'm focused in buildng
+              interactive and responsive webpage I specialize in DOM manipution.
+              Currently, i'm focused in buildng interactive and responsive
+              webpage I specialize.
             </Box>
-          </Paper>
-          <Paper elevation={3} sx={{px:5, py:4}}>
-            <Box>
-              <Box sx={{ display:'flex', justifyContent:'center', alignItems:'center', width:100, height:100, border:1, borderColor:'#aaa', borderRadius:'100%'}}><DevicesOutlinedIcon/></Box>
-              <Box sx={{fontWeight:'bold', fontSize:22, my:2}}>
-                WEB DESIGN
+          </Box>
+        </Paper>
+        <Paper className="hov" elevation={0} square>
+          <Box>
+            <Box className="box">
+              <Box className="outerbox">
+                <Box className="innerbox1" />
+                <Box className="innerbox2" />
               </Box>
-              <Box> 
-                  I specialize in DOM manipution. Currently, 
-                  i'm focused in buildng interactive and responsive webpage I specialize in DOM manipution. Currently, 
-                  i'm focused in buildng interactive and responsive webpage I specialize.
-              </Box>
+              <Groups sx={{ position: "absolute" }} />
             </Box>
-          </Paper>
-        </Box>
+            <Box className="title">Collaboration</Box>
+            <Box className="content">
+              I specialize in DOM manipution. Currently, i'm focused in buildng
+              interactive and responsive webpage I specialize in DOM manipution.
+              Currently, i'm focused in buildng interactive and responsive
+              webpage I specialize.
+            </Box>
+          </Box>
+        </Paper>
+
+        <Paper className="hov" elevation={0} square>
+          <Box>
+            <Box className="box">
+              <Box className="outerbox">
+                <Box className="innerbox1" />
+                <Box className="innerbox2" />
+              </Box>
+              <Tungsten sx={{ position: "absolute" }} />
+            </Box>
+            <Box className="title">Mentorship</Box>
+            <Box className="content">
+              I specialize in DOM manipution. Currently, i'm focused in buildng
+              interactive and responsive webpage I specialize in DOM manipution.
+              Currently, i'm focused in buildng interactive and responsive
+              webpage I specialize.
+            </Box>
+          </Box>
+        </Paper>
+        <Paper className="hov" elevation={0} square>
+          <Box>
+            <Box className="box">
+              <Box className="outerbox">
+                <Box className="innerbox1" />
+                <Box className="innerbox2" />
+              </Box>
+              <SupportAgent sx={{ position: "absolute" }} />
+            </Box>
+            <Box className="title">24/7 Support</Box>
+            <Box className="content">
+              I specialize in DOM manipution. Currently, i'm focused in buildng
+              interactive and responsive webpage I specialize in DOM manipution.
+              Currently, i'm focused in buildng interactive and responsive
+              webpage I specialize.
+            </Box>
+          </Box>
+        </Paper>
+      </Box>
     </Box>
   );
-}
+};
 
 export default Services;

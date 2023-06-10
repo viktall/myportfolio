@@ -3,6 +3,7 @@ import Homepage from '@/Components/Homepage'
 import About from '@/Components/About'
 import Project from '@/Components/Projects'
 import Services from '@/Components/Services'
+import Contact from '@/Components/Contact'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <About/>
         <Services/>
         <Project/>
+        <Contact/>
         
       </main>
     </>
